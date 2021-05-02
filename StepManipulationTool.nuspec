@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>StepManipulationTool</id>
+    <version>1.0.0</version>
+    <title>Step Manipulation Tool for XrmToolBox</title>
+    <authors>Imran Akram, Alexey Shytikov, Innofactor AB</authors>
+    <owners>imranakram</owners>
+    <projectUrl>https://github.com/Innofactor/StepsManipulationTool</projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      
+    </description>
+    <summary></summary>
+    <releaseNotes>
+   
+    </releaseNotes>
+    <copyright>Copyright 2016-2021 Innofactor AB</copyright>
+    <tags>XrmToolBox Plugins StepManipulationTool Step Manipulator</tags>
+    <dependencies>
+      <dependency id="XrmToolBox" version="1.2021.2.45" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="StepManipulationTool\bin\Release\StepManipulationTool.dll" target="lib\net452\Plugins" />
+  </files>
+</package>
