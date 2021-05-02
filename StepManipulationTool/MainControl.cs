@@ -58,7 +58,7 @@
         {
             get
             {
-                return "XrmToolBox.Plugins";
+                return "StepsManipulationTool";
             }
         }
 
@@ -81,7 +81,7 @@
         {
             get
             {
-                return "Cinteros";
+                return "Innofactor";
             }
         }
 
