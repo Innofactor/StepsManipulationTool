@@ -1,10 +1,10 @@
-﻿namespace StepsManipulationTool
-{
-    using System.ComponentModel.Composition;
-    using Innofactor.Xrm.Common.Utils;
-    using XrmToolBox.Extensibility;
-    using XrmToolBox.Extensibility.Interfaces;
+﻿using Innofactor.Xrm.Common.Utils;
+using System.ComponentModel.Composition;
+using XrmToolBox.Extensibility;
+using XrmToolBox.Extensibility.Interfaces;
 
+namespace StepManipulationTool
+{
     [Export(typeof(IXrmToolBoxPlugin)),
     ExportMetadata("Name", "Steps Manipulator"),
     ExportMetadata("Description", "Tool to perform unsafe operations with plugin steps"),
@@ -13,7 +13,7 @@
     ExportMetadata("BackgroundColor", "#ffffff"), // Use a HTML color name
     ExportMetadata("PrimaryFontColor", "#000000"), // Or an hexadecimal code
     ExportMetadata("SecondaryFontColor", "DarkGray")]
-    public class StepsManipulationTool : PluginBase
+    public class PluginDescription : PluginBase
     {
         #region Public Methods
 

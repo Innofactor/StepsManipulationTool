@@ -1,4 +1,4 @@
-﻿namespace StepsManipulationTool
+﻿namespace StepManipulationTool
 {
     using Innofactor.Xrm.Common.SDK;
     using Innofactor.Xrm.Common.Utils;
@@ -81,7 +81,7 @@
         {
             get
             {
-                return "Innofactor";
+                return "Cinteros";
             }
         }
 

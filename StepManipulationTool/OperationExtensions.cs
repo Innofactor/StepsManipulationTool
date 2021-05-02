@@ -1,4 +1,4 @@
-﻿namespace StepsManipulationTool
+﻿namespace StepManipulationTool
 {
     using System.Linq;
     using System.Windows.Forms;
@@ -6,7 +6,6 @@
     using Innofactor.Xrm.Common.Utils;
     using Microsoft.Xrm.Sdk;
     using XrmToolBox.Extensibility;
-
     public static class OperationExtensions
     {
         #region Public Methods

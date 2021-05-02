@@ -1,4 +1,4 @@
-﻿namespace StepsManipulationTool
+﻿namespace StepManipulationTool
 {
     internal struct MatchResult
     {
