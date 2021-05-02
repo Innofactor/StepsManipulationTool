@@ -1,4 +1,4 @@
-﻿namespace Cinteros.Xrm.StepsManipulationTool
+﻿namespace StepsManipulationTool
 {
     partial class MainControl
     {

@@ -1,7 +1,7 @@
-﻿namespace Cinteros.Xrm.StepsManipulationTool
+﻿namespace StepsManipulationTool
 {
-    using Common.SDK;
-    using Common.Utils;
+    using Innofactor.Xrm.Common.SDK;
+    using Innofactor.Xrm.Common.Utils;
     using Microsoft.Xrm.Sdk;
     using System;
     using System.Linq;
@@ -81,7 +81,7 @@
         {
             get
             {
-                return "Cinteros";
+                return "Innofactor";
             }
         }
 

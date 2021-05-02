@@ -3,18 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepsManipulationTool", "StepsManipulationTool.csproj", "{BF96E8C9-743B-40D3-8D81-6EF20F6A0C7F}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XrmToolBox.Helpers", "XrmToolBox.Helpers\XrmToolBox.Helpers.shproj", "{88280EA8-F014-41DE-9752-E1DDFFF053A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepsManipulationTool", "StepsManipulationTool\StepsManipulationTool.csproj", "{4675BEAB-D9CA-400E-BF5B-75F4E55492E4}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		XrmToolBox.Helpers\XrmToolBox.Helpers.projitems*{4675beab-d9ca-400e-bf5b-75f4e55492e4}*SharedItemsImports = 4
+		XrmToolBox.Helpers\XrmToolBox.Helpers.projitems*{88280ea8-f014-41de-9752-e1ddfff053a9}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BF96E8C9-743B-40D3-8D81-6EF20F6A0C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF96E8C9-743B-40D3-8D81-6EF20F6A0C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF96E8C9-743B-40D3-8D81-6EF20F6A0C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF96E8C9-743B-40D3-8D81-6EF20F6A0C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4675BEAB-D9CA-400E-BF5B-75F4E55492E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4675BEAB-D9CA-400E-BF5B-75F4E55492E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4675BEAB-D9CA-400E-BF5B-75F4E55492E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4675BEAB-D9CA-400E-BF5B-75F4E55492E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

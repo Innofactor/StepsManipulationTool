@@ -1,9 +1,9 @@
-﻿namespace Cinteros.Xrm.StepsManipulationTool
+﻿namespace StepsManipulationTool
 {
     using System.Linq;
     using System.Windows.Forms;
-    using Common.SDK;
-    using Common.Utils;
+    using Innofactor.Xrm.Common.SDK;
+    using Innofactor.Xrm.Common.Utils;
     using Microsoft.Xrm.Sdk;
     using XrmToolBox.Extensibility;
 
