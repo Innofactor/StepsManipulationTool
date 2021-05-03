@@ -7,7 +7,8 @@
     <authors>Imran Akram, Alexey Shytikov, Innofactor AB</authors>
     <owners>imranakram, InnofactorSE</owners>
     <projectUrl>https://github.com/Innofactor/StepsManipulationTool</projectUrl>
-    <iconUrl></iconUrl>
+    <icon>icon.png</icon>
+	<iconUrl>https://user-images.githubusercontent.com/13014005/116875731-aa86fd80-ac1b-11eb-875b-2d43121c47c5.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
     Tool to perform unsafe operations with plugin steps. Move steps between plugins by preserving their guids!
