@@ -5,12 +5,12 @@
     <version>1.0.0</version>
     <title>Step Manipulation Tool for XrmToolBox</title>
     <authors>Imran Akram, Alexey Shytikov, Innofactor AB</authors>
-    <owners>imranakram</owners>
+    <owners>imranakram, InnofactorSE</owners>
     <projectUrl>https://github.com/Innofactor/StepsManipulationTool</projectUrl>
     <iconUrl></iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
-      
+    Tool to perform unsafe operations with plugin steps. Move steps between plugins by preserving their guids!
     </description>
     <summary></summary>
     <releaseNotes>
@@ -23,6 +23,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="StepManipulationTool\bin\Release\StepManipulationTool.dll" target="lib\net452\Plugins" />
+    <file src="StepManipulationTool\bin\Release\StepManipulationTool.dll" target="lib\net472\Plugins" />
   </files>
 </package>
