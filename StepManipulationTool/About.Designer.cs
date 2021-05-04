@@ -66,6 +66,7 @@ namespace Innofactor.XTB.StepManipulationTool
             this.linkLabelImran.TabIndex = 42;
             this.linkLabelImran.TabStop = true;
             this.linkLabelImran.Text = "@imranakram";
+            this.linkLabelImran.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelImran_LinkClicked);
             // 
             // label3
             // 
@@ -85,6 +86,7 @@ namespace Innofactor.XTB.StepManipulationTool
             this.linkLabelAlexey.TabIndex = 40;
             this.linkLabelAlexey.TabStop = true;
             this.linkLabelAlexey.Text = "@shytikov";
+            this.linkLabelAlexey.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelAlexey_LinkClicked);
             // 
             // label1
             // 

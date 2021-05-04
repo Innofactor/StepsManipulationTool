@@ -171,6 +171,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="images\close.png" />
+    <Content Include="images\icon.ico" />
     <Content Include="images\iconLarge.png" />
     <Content Include="images\refresh.png" />
   </ItemGroup>

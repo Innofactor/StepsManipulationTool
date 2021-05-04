@@ -30,8 +30,10 @@ namespace Innofactor.XTB.StepManipulationTool
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainControl));
             this.tsMenu = new System.Windows.Forms.ToolStrip();
             this.tsbClose = new System.Windows.Forms.ToolStripButton();
+            this.tsbRefresh = new System.Windows.Forms.ToolStripButton();
             this.gbSteps = new System.Windows.Forms.GroupBox();
             this.lvSteps = new System.Windows.Forms.ListView();
             this.chName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -75,7 +77,6 @@ namespace Innofactor.XTB.StepManipulationTool
             this.lSourceMessage = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.tsbRefresh = new System.Windows.Forms.ToolStripButton();
             this.tsMenu.SuspendLayout();
             this.gbSteps.SuspendLayout();
             this.cmStrip.SuspendLayout();
@@ -105,6 +106,15 @@ namespace Innofactor.XTB.StepManipulationTool
             this.tsbClose.Size = new System.Drawing.Size(56, 22);
             this.tsbClose.Text = "Close";
             this.tsbClose.Click += new System.EventHandler(this.tsbClose_Click);
+            // 
+            // tsbRefresh
+            // 
+            this.tsbRefresh.Image = global::Innofactor.XTB.StepManipulationTool.Properties.Resources.refresh;
+            this.tsbRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbRefresh.Name = "tsbRefresh";
+            this.tsbRefresh.Size = new System.Drawing.Size(66, 22);
+            this.tsbRefresh.Text = "Refresh";
+            this.tsbRefresh.Click += new System.EventHandler(this.tsbRefresh_Click);
             // 
             // gbSteps
             // 
@@ -546,15 +556,6 @@ namespace Innofactor.XTB.StepManipulationTool
             this.comboBox2.Size = new System.Drawing.Size(184, 21);
             this.comboBox2.TabIndex = 11;
             // 
-            // tsbRefresh
-            // 
-            this.tsbRefresh.Image = global::Innofactor.XTB.StepManipulationTool.Properties.Resources.refresh;
-            this.tsbRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbRefresh.Name = "tsbRefresh";
-            this.tsbRefresh.Size = new System.Drawing.Size(66, 22);
-            this.tsbRefresh.Text = "Refresh";
-            this.tsbRefresh.Click += new System.EventHandler(this.tsbRefresh_Click);
-            // 
             // MainControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -562,6 +563,7 @@ namespace Innofactor.XTB.StepManipulationTool
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tsMenu);
             this.Name = "MainControl";
+            this.PluginIcon = ((System.Drawing.Icon)(resources.GetObject("$this.PluginIcon")));
             this.Size = new System.Drawing.Size(600, 600);
             this.tsMenu.ResumeLayout(false);
             this.tsMenu.PerformLayout();
