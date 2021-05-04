@@ -75,6 +75,7 @@ namespace Innofactor.XTB.StepManipulationTool
             this.lSourceMessage = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.tsbRefresh = new System.Windows.Forms.ToolStripButton();
             this.tsMenu.SuspendLayout();
             this.gbSteps.SuspendLayout();
             this.cmStrip.SuspendLayout();
@@ -88,7 +89,8 @@ namespace Innofactor.XTB.StepManipulationTool
             // tsMenu
             // 
             this.tsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbClose});
+            this.tsbClose,
+            this.tsbRefresh});
             this.tsMenu.Location = new System.Drawing.Point(0, 0);
             this.tsMenu.Name = "tsMenu";
             this.tsMenu.Size = new System.Drawing.Size(600, 25);
@@ -97,9 +99,10 @@ namespace Innofactor.XTB.StepManipulationTool
             // 
             // tsbClose
             // 
+            this.tsbClose.Image = global::Innofactor.XTB.StepManipulationTool.Properties.Resources.close;
             this.tsbClose.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbClose.Name = "tsbClose";
-            this.tsbClose.Size = new System.Drawing.Size(40, 22);
+            this.tsbClose.Size = new System.Drawing.Size(56, 22);
             this.tsbClose.Text = "Close";
             this.tsbClose.Click += new System.EventHandler(this.tsbClose_Click);
             // 
@@ -543,6 +546,15 @@ namespace Innofactor.XTB.StepManipulationTool
             this.comboBox2.Size = new System.Drawing.Size(184, 21);
             this.comboBox2.TabIndex = 11;
             // 
+            // tsbRefresh
+            // 
+            this.tsbRefresh.Image = global::Innofactor.XTB.StepManipulationTool.Properties.Resources.refresh;
+            this.tsbRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbRefresh.Name = "tsbRefresh";
+            this.tsbRefresh.Size = new System.Drawing.Size(66, 22);
+            this.tsbRefresh.Text = "Refresh";
+            this.tsbRefresh.Click += new System.EventHandler(this.tsbRefresh_Click);
+            // 
             // MainControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -614,5 +626,6 @@ namespace Innofactor.XTB.StepManipulationTool
         private System.Windows.Forms.Label lSourceMessage;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ToolStripButton tsbRefresh;
     }
 }

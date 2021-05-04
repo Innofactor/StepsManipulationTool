@@ -9,10 +9,8 @@
     using System.Xml;
     using XrmToolBox.Extensibility;
     using XrmToolBox.Extensibility.Interfaces;
-    using System.ComponentModel;
-    using System.Diagnostics;
 
-    public partial class MainControl : PluginControlBase, IGitHubPlugin, IWorkerHost
+    public partial class MainControl : PluginControlBase, IGitHubPlugin, IWorkerHost, IAboutPlugin
     {
         #region Public Constructors
 
@@ -195,16 +193,23 @@
             });
         }
 
+        public void ShowAboutDialog()
+        {
+            try
+            {
+                var about = new About();
+                //StartPosition = FormStartPosition.CenterParent
+                about.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
         #endregion Public Methods
 
         #region Private Methods
-
-        private static void AddString(XmlDocument document, XmlElement properties, string name, string value)
-        {
-            var property = document.CreateElement(name);
-            property.InnerText = value;
-            properties.AppendChild(property);
-        }
 
         private static void AddEntityReference(XmlDocument document, XmlElement properties, Entity definition, string name)
         {
@@ -220,6 +225,33 @@
             {
                 AddString(document, properties, name, ((OptionSetValue)definition.Attributes[name]).Value.ToString());
             }
+        }
+
+        private static void AddString(XmlDocument document, XmlElement properties, string name, string value)
+        {
+            var property = document.CreateElement(name);
+            property.InnerText = value;
+            properties.AppendChild(property);
+        }
+
+        private static XmlElement CreateHeaderElement(XmlDocument document, string elementName, Guid id, string friendlyName)
+        {
+            XmlAttribute attribute;
+
+            var element = document.CreateElement(elementName);
+
+            attribute = document.CreateAttribute(Constants.Xml.ID);
+            attribute.Value = id.ToString();
+            element.Attributes.Append(attribute);
+
+            if (!string.IsNullOrEmpty(friendlyName))
+            {
+                attribute = document.CreateAttribute(Constants.Xml.FRIENDLY_NAME);
+                attribute.Value = friendlyName;
+                element.Attributes.Append(attribute);
+            }
+
+            return element;
         }
 
         private static Entity[] RemoveEarlyBound(Entity[] entities)
@@ -281,14 +313,6 @@
         private void cbSourcePlugin_SelectedIndexChanged(object sender, EventArgs e)
         {
             RetrieveSteps();
-        }
-
-        private void RetrieveSteps()
-        {
-            var pluginAssembly = this.cbSourceAssembly.SelectedItem as PluginAssembly;
-            var pluginType = this.cbSourcePlugin.SelectedItem as PluginType;
-
-            RetrieveSteps(pluginAssembly, pluginType);
         }
 
         private void cbTargetAssembly_SelectedIndexChanged(object sender, EventArgs e)
@@ -396,26 +420,6 @@
             WorkAsync(info);
         }
 
-        private static XmlElement CreateHeaderElement(XmlDocument document, string elementName, Guid id, string friendlyName)
-        {
-            XmlAttribute attribute;
-
-            var element = document.CreateElement(elementName);
-
-            attribute = document.CreateAttribute(Constants.Xml.ID);
-            attribute.Value = id.ToString();
-            element.Attributes.Append(attribute);
-
-            if (!string.IsNullOrEmpty(friendlyName))
-            {
-                attribute = document.CreateAttribute(Constants.Xml.FRIENDLY_NAME);
-                attribute.Value = friendlyName;
-                element.Attributes.Append(attribute);
-            }
-
-            return element;
-        }
-
         /// <summary>
         /// Fill drop-down list of assemblies in context menu
         /// </summary>
@@ -479,6 +483,14 @@
             }
         }
 
+        private void RetrieveSteps()
+        {
+            var pluginAssembly = this.cbSourceAssembly.SelectedItem as PluginAssembly;
+            var pluginType = this.cbSourcePlugin.SelectedItem as PluginType;
+
+            RetrieveSteps(pluginAssembly, pluginType);
+        }
+
         /// <summary>
         /// Selecting and checking all the steps available
         /// </summary>
@@ -498,6 +510,11 @@
         private void tsbClose_Click(object sender, EventArgs e)
         {
             CloseTool();
+        }
+
+        private void tsbRefresh_Click(object sender, EventArgs e)
+        {
+            ExecuteMethod(RetrieveAssemblies);
         }
 
         private void tscAssemblies_SelectedIndexChanged(object sender, EventArgs e)
