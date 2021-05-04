@@ -13,7 +13,7 @@
     <description>
     Tool to perform unsafe operations with plugin steps. Move steps between plugins by preserving their guids!
     </description>
-    <summary></summary>
+    <summary>Perform unsafe operations such as moving steps between plugins. This preserves their guids which is very useful for upgrading major versions of plugins.</summary>
     <releaseNotes>
    
     </releaseNotes>
@@ -25,5 +25,6 @@
   </metadata>
   <files>
     <file src="StepManipulationTool\bin\Release\StepManipulationTool.dll" target="lib\net472\Plugins" />
+    <file src="icon.png" target="" />
   </files>
 </package>
