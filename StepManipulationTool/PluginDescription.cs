@@ -3,7 +3,7 @@ using System.ComponentModel.Composition;
 using XrmToolBox.Extensibility;
 using XrmToolBox.Extensibility.Interfaces;
 
-namespace StepManipulationTool
+namespace Innofactor.XTB.StepManipulationTool
 {
     [Export(typeof(IXrmToolBoxPlugin)),
     ExportMetadata("Name", "Steps Manipulator"),

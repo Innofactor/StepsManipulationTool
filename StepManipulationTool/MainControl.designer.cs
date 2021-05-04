@@ -1,5 +1,5 @@
 ﻿
-namespace StepManipulationTool
+namespace Innofactor.XTB.StepManipulationTool
 {
     partial class MainControl
     {

@@ -1,4 +1,4 @@
-﻿namespace StepManipulationTool
+﻿namespace Innofactor.XTB.StepManipulationTool
 {
     using Innofactor.Xrm.Common.SDK;
     using Innofactor.Xrm.Common.Utils;

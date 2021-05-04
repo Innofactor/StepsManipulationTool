@@ -1,4 +1,4 @@
-﻿namespace StepManipulationTool
+﻿namespace Innofactor.XTB.StepManipulationTool
 {
     using System.Linq;
     using System.Windows.Forms;

@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Innofactor AB")]
-[assembly: AssemblyProduct("StepManipulationTool")]
+[assembly: AssemblyProduct("Innofactor.XTB.StepManipulationTool")]
 [assembly: AssemblyCopyright("Copyright © Innofactor AB 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

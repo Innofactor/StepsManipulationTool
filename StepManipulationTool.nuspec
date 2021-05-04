@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package >
   <metadata>
-    <id>StepManipulationTool</id>
+    <id>Innofactor.XTB.StepManipulationTool</id>
     <version>1.0.0</version>
     <title>Step Manipulation Tool for XrmToolBox</title>
     <authors>Imran Akram, Alexey Shytikov, Innofactor AB</authors>
@@ -24,7 +24,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="StepManipulationTool\bin\Release\StepManipulationTool.dll" target="lib\net472\Plugins" />
+    <file src="StepManipulationTool\bin\Release\Innofactor.XTB.StepManipulationTool.dll" target="lib\net472\Plugins" />
     <file src="icon.png" target="" />
   </files>
 </package>
