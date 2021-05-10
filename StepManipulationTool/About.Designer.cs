@@ -62,10 +62,10 @@ namespace Innofactor.XTB.StepManipulationTool
             this.linkLabelImran.AutoSize = true;
             this.linkLabelImran.Location = new System.Drawing.Point(113, 238);
             this.linkLabelImran.Name = "linkLabelImran";
-            this.linkLabelImran.Size = new System.Drawing.Size(72, 13);
+            this.linkLabelImran.Size = new System.Drawing.Size(90, 13);
             this.linkLabelImran.TabIndex = 42;
             this.linkLabelImran.TabStop = true;
-            this.linkLabelImran.Text = "@imranakram";
+            this.linkLabelImran.Text = "@imranakram365";
             this.linkLabelImran.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelImran_LinkClicked);
             // 
             // label3
@@ -139,7 +139,7 @@ namespace Innofactor.XTB.StepManipulationTool
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.listAssemblies);
-            this.groupBox1.Location = new System.Drawing.Point(193, 163);
+            this.groupBox1.Location = new System.Drawing.Point(208, 164);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);

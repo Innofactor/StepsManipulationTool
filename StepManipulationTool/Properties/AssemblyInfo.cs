@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Step Manipulation Tool")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Innofactor AB")]
+[assembly: AssemblyCompany("Alexey Shytikov, Imran Akram and Innofactor AB")]
 [assembly: AssemblyProduct("Innofactor.XTB.StepManipulationTool")]
 [assembly: AssemblyCopyright("Copyright © Innofactor AB 2021")]
 [assembly: AssemblyTrademark("")]
